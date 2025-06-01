@@ -1,0 +1,248 @@
+@import url('base.css');
+@import url('variables.css');
+
+
+/* pc */
+
+@media (min-width: 768px) {
+
+    /* 모바일 아이콘 pc에서 숨김 */
+ .toggle {
+    display: none;
+ }
+    
+.container {
+      /* width: 1240px; */
+    width: 100%;
+    min-width: 400px;
+    max-width: 1400px;
+    
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+header .container{
+  height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header nav ul li {
+    margin-left: 40px;
+}
+
+header nav ul li {
+    display: inline;
+
+}
+
+.main-visual {
+    background-color: var(--primary-color);
+   
+}
+
+.main-visual .container {
+
+     padding-top: 105px;
+    padding-bottom: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .container {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(197, 197, 27); */
+    gap: 20px;
+
+}
+
+header nav a{
+    color: #000;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+#portfolio .container li {
+    /* border: 1px solid red;
+    width: 25%; */
+    margin-bottom: 40px;
+    width: calc((100% - 20px *3) / 4); 
+    /* li 간격 20px, 넓이 25% 고정시킨뒤 4 컬럼으로 분할하는 계산식 
+       20px 간격을 3개 넣음 / li 항목 4개 */
+}
+
+#portfolio .container li img {
+    width: 100%;
+}
+
+#portfolio h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase;  /* 대문자 변경 */
+    font-size: 36px;
+    letter-spacing: calc(36px / 2); 
+    /* 폰트사이즈에서 자간 50% 설정, 계산할때 쓰는 함수 */
+}
+
+#portfolio h3 {
+    font-family: "ADLaM Display", system-ui;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+footer .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer .footer-logo {
+    margin-bottom: 14px;
+}
+
+}
+
+/* moblie */
+
+@media (max-width: 767px) {
+     /* body {
+        background-color: aquamarine;
+     } */
+
+    .container {
+      /* width: 1240px; */
+    width: 100%;
+    max-width: 767px;
+    
+    /* background-color: aqua; */
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+header .container{
+  height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header nav ul li {
+    margin-left: 40px;
+}
+
+header nav ul li {
+    display: inline;
+
+}
+
+.main-visual {
+    background-color: var(--primary-color);
+   
+}
+
+.main-visual .container {
+
+     padding-top: 105px;
+    padding-bottom: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-visual img {
+    width: 80%;
+}
+
+
+
+#portfolio .container {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  */
+
+    display: block;
+
+}
+
+/* pc메뉴 모바일 화면에서 숨김 */
+header nav ul {
+    display: none;
+}
+
+header nav a{
+    color: #000;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+#portfolio .container li {
+    
+    /* width: 25%; */
+    /* width: calc((100% - 20px *3) / 4);  */
+
+    /* li 간격 20px, 넓이 25% 고정시킨뒤 4 컬럼으로 분할하는 계산식 
+       20px 간격을 3개 넣음 / li 항목 4개 */
+
+     margin-bottom: 40px;
+}
+
+#portfolio .container li img {
+    width: 100%;
+}
+
+#portfolio h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase;  /* 대문자 변경 */
+    font-size: 20px;
+    letter-spacing: calc(36px / 2); 
+    /* 폰트사이즈에서 자간 50% 설정, 계산할때 쓰는 함수 */
+}
+
+#portfolio h3 {
+    font-family: "ADLaM Display", system-ui;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+footer .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer .footer-logo {
+    margin-bottom: 14px;
+}
+
+}
